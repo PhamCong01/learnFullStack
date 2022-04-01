@@ -1,0 +1,132 @@
+.container {
+    position: relative;
+    width: 100%;
+
+}
+.content {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contentInput {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logoBlog {
+    width: 20%;
+    margin: 0 auto; 
+}
+.titleBlog {
+    margin: 20px auto;
+}
+.inputContainerLogin {
+
+}
+.userName {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.labelName {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.inputName {
+    padding:10px;
+    outline: none;
+    border-radius:10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+.labelPassword {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.inputPass {
+
+    padding:10px;
+    outline: none;
+    border-radius:10px;
+    margin-top: 10px;
+}
+.buttonLoginContainer {
+    width: 100%;
+}
+.buttonLogin {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(252, 61, 61);
+    border:none;
+    border-radius:10px;
+    outline: none;
+    color:#fff;
+    padding:10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.buttonLogin:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.or {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.buttonLoginWithFacebook {
+   width: 100%;
+
+}
+.buttonLoginFacebook {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 61, 61);
+    border:none;
+    border-radius:10px;
+    outline: none;
+    color:#fff;
+    padding:10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.buttonLoginWithGoogle {
+    width: 100%;
+    margin-top: 10px;
+}
+.LoginWithGoogle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 61, 61);
+    border:none;
+    border-radius:10px;
+    outline: none;
+    color:#fff;
+    padding:10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}

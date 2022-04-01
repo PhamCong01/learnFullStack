@@ -1,11 +1,10 @@
-const user = require("../models/user");
-
+const users = require("../models/user");
 class userController {
   // [GET]/allUser
-  allUser = async (req, res) => {
+   allUser = async (req, res) => {
     try {
-      const allUser = await user.find({});
-      await res.status(200).json(allUser);
+     const allUsers = await users.find({});
+     res.status(200).json({msg : "get users successfully"});
     } catch (error) {
       res.status(500).json({ message: error });
     }
@@ -13,8 +12,8 @@ class userController {
   // [DELETE]/:id/delete
   deleteUser = async (req, res) => {
     try {
-      const userDelete = await user.findOneAndDelete({_id: req.params.id});
-      await res.status(200).json(user);
+      const userDelete = await users.findOneAndDelete({_id: req.params.id});
+      await res.status(200).json(users);
     } catch (error) {
       res.status(500).json({ message: error });
     }

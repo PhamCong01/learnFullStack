@@ -1,4 +1,4 @@
-const express = require("express");
+
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema(
     name: {
       type: String,
       minLength: 3,
-      maxLength: 20,
+      maxLength: 40,
       required: true,
       unique: true,
     },

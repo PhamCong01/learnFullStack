@@ -46,7 +46,7 @@ class AuthController {
             admin: user.admin,
           },
           process.env.ACCESS_TOKEN_SECRET,
-          { expiresIn: "30s" }
+          { expiresIn: "2h" }
         );
         const { password, ...others } = user._doc;
         res.status(200).json({ ...others, accessToken });
